@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import DataStreamer, { ServerRespond } from './DataStreamer';
 import Graph from './Graph';
 import './App.css';
-
 /**
  * State declaration for <App />
  */
@@ -47,7 +46,7 @@ class App extends Component<{}, IState> {
           this.setState({data:serverResponds,showGraph: true})
         })
         x++;
-        if (x>100){
+        if (x>1000){
           clearInterval(interval)
         }
     },100)
